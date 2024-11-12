@@ -10,8 +10,8 @@ class BancoTest2 {
     Banco banco = new Banco();
 
     @Test
-    @DisplayName("Deve obter taxa de juros para renda maior que 1000 e menor que 5000")
-    void deveObterTaxaJurosParaRendaMaior1000EMenor5000(){
+    @DisplayName("Deve obter taxa de juros para renda maior que 500 e menor que 5000")
+    void deveObterTaxaJurosParaRendaMaior500EMenor5000(){
         Cliente cliente = new Cliente("Robson", 2500d);
         Double taxaAtual = banco.obterTaxaJuros(cliente);
         assertEquals(1d, taxaAtual);
@@ -26,10 +26,10 @@ class BancoTest2 {
     }
 
     @Test
-    @DisplayName("Deve obter taxa de juros para renda igual a 1000")
-    void deveObterTaxaJurosParaRendaIgual1000(){
-        Cliente cliente = new Cliente("Chico", 1000d);
+    @DisplayName("Deve obter taxa de juros para renda igual a 500")
+    void deveObterTaxaJurosParaRendaIgual500(){
+        Cliente cliente = new Cliente("Chico", 500d);
         Double taxaAtual = banco.obterTaxaJuros(cliente);
-        assertEquals(1d, taxaAtual);
+        assertEquals(0.5d, taxaAtual);
     }
 }

@@ -46,7 +46,7 @@
 				<configuration>
 					<timestampedReports>false</timestampedReports>
 					<targetTests>
-						<param>br.gov.sp.cps.mutation.core.BancoTest3</param>
+						<param>br.gov.sp.cps.mutation.core.BancoTest</param>
 					</targetTests>
 				</configuration>
 			</plugin>
